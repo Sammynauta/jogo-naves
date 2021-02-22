@@ -1,2 +1,2 @@
-# jogo-naves
+# jogo-aeronaves
 jogo de naves. Projeto DIO
