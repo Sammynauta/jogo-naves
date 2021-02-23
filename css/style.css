@@ -44,6 +44,13 @@ background-image:url(../imgs/apache.png);
 
 }
 
+#disparo {
+	width: 50px;
+	height: 8px;
+	position: absolute;
+	background-image: url(../imgs/disparo.png);
+}
+
 #inimigo1 {
 	width: 256px;
 	height: 66px;
@@ -72,6 +79,20 @@ background-image:url(../imgs/apache.png);
 	background-image:url(../imgs/amigo.png);
 }
 
+#explosao1 {
+	width:15px;
+	height:87px;
+	position:absolute;
+
+}
+
+#explosao2 {
+	width:15px;
+	height:87px;
+	position:absolute;
+	
+}
+
 #inicio {
 	width:350px;
 	height:210px;
@@ -83,6 +104,7 @@ background-image:url(../imgs/apache.png);
 	padding:10px;
 
 }
+/* animaçao do jogador*/
 .anima1 {
 	background-image:url(../imgs/helicoptero.png);
 	animation:play .5s steps(2) infinite;
@@ -118,6 +140,9 @@ background-image:url(../imgs/apache.png);
 	  to { background-position: -512px; }
  }
 
+/* animaçao do inimigo1 
+inimigo2 nao necessita de animaçao*/
+ 
  .anima2 {
     background-image:url(../imgs/inimigo1.png);
     animation: play .5s steps(2) infinite;
@@ -127,6 +152,7 @@ background-image:url(../imgs/apache.png);
     -o-animation: play .5s steps(2) infinite; 
 }
 
+/* animaçao do amigo*/
 .anima3 {
 	background-image:url(../imgs/amigo.png);
 	animation:play2 .9s steps(12) infinite;
