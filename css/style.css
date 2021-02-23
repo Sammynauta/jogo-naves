@@ -34,6 +34,28 @@ body {
 	border-style:solid;
 }
 
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 5px;
+	top: 590px;
+}
+
+#energia {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 750px;
+	top: 7px;	
+}
+
+h2 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#FFF
+}
+
 #jogador {
 	width:256px;
 	height:66px;
@@ -93,9 +115,15 @@ background-image:url(../imgs/apache.png);
 	
 }
 
+#explosao3 {
+	width:44px;
+	height:51px;
+	position:absolute;
+}
+
 #inicio {
 	width:350px;
-	height:210px;
+	height:230px;
 	background-color:#FFF;
  	margin-left:auto;
     margin-right:auto;
@@ -104,6 +132,58 @@ background-image:url(../imgs/apache.png);
 	padding:10px;
 
 }
+
+#inicio button {
+	background-color: #603A03;
+	color: #FFF;
+	padding: 10px;
+	border: solid 3px #603A03;
+	border-radius: 15px;
+}
+
+#inicio button:hover{
+	background-color: #ffffff;
+	color: #603A03;
+	padding: 10px;
+	border: solid 3px #603A03;
+	border-radius: 15px;
+}
+
+h3 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#603A03;
+
+}
+
+#fim {
+	width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+
+}
+
+#fim button {
+	background-color: #603A03;
+	color: #FFF;
+	padding: 10px;
+	border: solid 3px #603A03;
+	border-radius: 15px;
+}
+
+#fim button:hover{
+	background-color: #ffffff;
+	color: #603A03;
+	padding: 10px;
+	border: solid 3px #603A03;
+	border-radius: 15px;
+}
+
 /* animaçao do jogador*/
 .anima1 {
 	background-image:url(../imgs/helicoptero.png);
@@ -162,6 +242,18 @@ inimigo2 nao necessita de animaçao*/
          -o-animation: play2 .9s steps(12) infinite;
 }
 
+/* animacao do aliado morrendo*/
+.anima4 {
+	width:44px;
+	height:51px;
+	background-image:url(../imgs/amigo_morte.png);
+	animation:play3 .5s steps(7) infinite;
+	-webkit-animation: play3 .5s steps(7) infinite;
+       -moz-animation: play3 .5s steps(7) infinite;
+        -ms-animation: play3 .5s steps(7) infinite;
+         -o-animation: play3 .5s steps(7) infinite;
+}
+
 @keyframes play2 {
 	from {background-position:0px;}
 	to {background-position:-528px;}
@@ -185,6 +277,31 @@ inimigo2 nao necessita de animaçao*/
 @-o-keyframes play2 {
    from { background-position:    0px; }
      to { background-position: -528px; }
+}
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-308px;}
+}
+
+@-webkit-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-moz-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-ms-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
+}
+
+@-o-keyframes play3 {
+   from { background-position:    0px; }
+     to { background-position: -308px; }
 }
 
 .boxsammy {
